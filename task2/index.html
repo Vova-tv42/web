@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <h1>Task 2</h1>
+    </header>
+
+    <nav class="navigation">
+      <a href="#reg">Реєстрація</a>
+      <a href="#login">Вхід</a>
+      <a href="#feedback">Зв'язок</a>
+    </nav>
+
+    <main class="content">
+      <section class="info">
+        <div class="info__text">
+          <img src="assets/ozzy1.avif" class="img-float" />
+          <img src="assets/ozzy2.jpg" class="img-float img-float--right" />
+          <img src="assets/ozzy3.jpg" class="img-float" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure ab
+            cupiditate impedit error, consequatur obcaecati, sapiente excepturi
+            deleniti numquam fugit repudiandae sequi. Id ducimus ea perspiciatis
+            et laborum eos?
+          </p>
+        </div>
+
+        <div class="composition">
+          <div class="item item--1">1</div>
+          <div class="item item--2">2</div>
+          <div class="item item--3">3</div>
+        </div>
+      </section>
+
+      <section class="forms">
+        <form id="reg" class="form-reg">
+          <fieldset>
+            <legend>Реєстрація</legend>
+            <img src="assets/ozzy1.avif" width="50" />
+            <input type="text" placeholder="Ім'я" required />
+            <input type="text" placeholder="Прізвище" />
+            <label><input type="radio" name="g" /> Ч</label>
+            <label><input type="radio" name="g" /> Ж</label>
+            <input type="number" placeholder="Вік" />
+            <input type="date" />
+            <select>
+              <option>Україна</option>
+            </select>
+            <input type="tel" pattern="\+380[0-9]{9}" placeholder="+380..." />
+            <input type="url" placeholder="URL" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Пароль" />
+            <label><input type="checkbox" /> Згоден</label>
+            <button type="submit">Зареєструватися</button>
+            <button type="reset">Відміна</button>
+          </fieldset>
+        </form>
+
+        <form id="login" class="form-login">
+          <fieldset>
+            <legend>Вхід</legend>
+            <input type="text" placeholder="Логін" />
+            <input type="password" placeholder="Пароль" />
+            <button>Вхід</button>
+          </fieldset>
+        </form>
+
+        <form id="feedback" class="form-feed">
+          <fieldset>
+            <legend>Зворотний зв'язок</legend>
+            <input type="text" placeholder="Ім'я" />
+            <input type="email" placeholder="Email" />
+            <input list="theme-list" />
+
+            <textarea placeholder="Повідомлення"></textarea>
+            <button>Відправити</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer"><a href="#">FB</a> | <a href="#">IG</a></footer>
+
+    <a href="#" class="fixed-btn">↑</a>
+  </body>
+</html>
