@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 62.5rem;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  border-bottom: 2px solid #333;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grid-header {
+  background-color: #1f1f1f;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+.grid-cell {
+  padding: 1.5rem;
+  border-bottom: 1px solid #222;
+}
+
+.task-description {
+  font-size: 0.875rem;
+  color: #ccc;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input,
+select {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 0.625rem;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #bb86fc;
+}
+
+button {
+  background-color: #bb86fc;
+  color: #000;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #9965f4;
+}
+
+.output {
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  min-height: 6.25rem;
+  font-family: monospace;
+  word-break: break-all;
+  font-size: 0.875rem;
+  color: #03dac6;
+}
+
+.highlight {
+  color: #ffeb3b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+td {
+  border: 1px solid #444;
+  padding: 0.25rem;
+  text-align: center;
+}

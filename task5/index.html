@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="task-grid">
+        <div class="grid-header">Опис завдання</div>
+        <div class="grid-header">Керування</div>
+        <div class="grid-header">Результат</div>
+
+        <div class="grid-cell">
+          <p class="task-description">
+            Обчислення послідовності за формулою bі=і!+і² від 1 до n з кроком
+            step. Останні 5 елементів масиву переносяться на початок та
+            підсвічуються.
+          </p>
+        </div>
+
+        <div class="grid-cell controls">
+          <input type="number" id="t1-n" placeholder="Число n" />
+          <input type="number" id="t1-step" placeholder="Крок step" />
+          <button onclick="task1()">Виконати</button>
+        </div>
+
+        <div class="grid-cell">
+          <div id="t1-output" class="output"></div>
+        </div>
+
+        <div class="grid-cell">
+          <p class="task-description">
+            Генерація матриці N x M. Кожен елемент у парних рядках дорівнює 1,
+            інші - випадкові цілі числа. Матриця відображається у формі таблиці.
+          </p>
+        </div>
+
+        <div class="grid-cell controls">
+          <input type="number" id="t2-rows" placeholder="Рядки N" />
+          <input type="number" id="t2-cols" placeholder="Стовпці M" />
+          <button onclick="task2()">Генерувати</button>
+        </div>
+
+        <div class="grid-cell">
+          <div id="t2-output" class="output"></div>
+        </div>
+
+        <div class="grid-cell">
+          <p class="task-description">
+            Створення об'єкта користувача (Прізвище, Ім'я, По батькові) та
+            виведення всіх його властивостей за допомогою стрілкової функції та
+            циклу for...in.
+          </p>
+        </div>
+
+        <div class="grid-cell controls">
+          <input type="text" id="t3-surname" placeholder="Прізвище" />
+          <input type="text" id="t3-name" placeholder="Ім'я" />
+          <input type="text" id="t3-patronymic" placeholder="По батькові" />
+          <select id="t3-gender">
+            <option value="Чоловік">Чоловік</option>
+            <option value="Жінка">Жінка</option>
+            <option value="Інше">Інше</option>
+          </select>
+          <button onclick="task3()">Створити</button>
+        </div>
+
+        <div class="grid-cell">
+          <div id="t3-output" class="output"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
