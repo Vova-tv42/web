@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  flex: 1;
+  max-width: 62.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+
+.header__title {
+  font-size: 2.25rem;
+  color: #38bdf8;
+}
+
+.demo-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.demo-section__item {
+  background-color: #1e293b;
+  padding: 1.875rem;
+  border-radius: 0.75rem;
+  border: 1px solid #334155;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.demo-section__title {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: #e2e8f0;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 0.75rem;
+}
+
+.demo-section__controls {
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  background-color: #0ea5e9;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #0284c7;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.output {
+  background-color: #020617;
+  color: #03dac6;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  font-family: "Fira Code", "Cascadia Code", "Source Code Pro", monospace;
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+  min-height: 10rem;
+  border: 1px solid #1e293b;
+}
+
+@media (min-width: 768px) {
+  .demo-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .demo-section__item:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .demo-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .demo-section__item:last-child {
+    grid-column: span 1;
+  }
+}
