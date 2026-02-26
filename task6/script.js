@@ -57,36 +57,36 @@ sessionObject.displayInformation = function () {
 
 class Group {
   constructor(specialty, code, count) {
-    this.specialtyName = specialty;
-    this.groupCode = code;
-    this.studentCount = count;
+    this._specialtyName = specialty;
+    this._groupCode = code;
+    this._studentCount = count;
   }
 
   get specialtyName() {
-    return this.specialtyName;
+    return this._specialtyName;
   }
 
   set specialtyName(value) {
     if (value.length > 0) {
-      this.specialtyName = value;
+      this._specialtyName = value;
     }
   }
 
   get groupCode() {
-    return this.groupCode;
+    return this._groupCode;
   }
 
   set groupCode(value) {
-    this.groupCode = value;
+    this._groupCode = value;
   }
 
   get studentCount() {
-    return this.studentCount;
+    return this._studentCount;
   }
 
   set studentCount(value) {
     if (value >= 0) {
-      this.studentCount = value;
+      this._studentCount = value;
     }
   }
 
@@ -102,12 +102,12 @@ class Session extends Group {
   }
 
   get dismissedCount() {
-    return this.dismissedCount;
+    return this._dismissedCount;
   }
 
   set dismissedCount(value) {
     if (value >= 0) {
-      this.dismissedCount = value;
+      this._dismissedCount = value;
     }
   }
 
